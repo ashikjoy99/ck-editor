@@ -1,34 +1,41 @@
 import "./common.scss";
-import React from "react";
-import Editor from "ckeditor5-custom-build/build/ckeditor";
-// import {Editor as ClassicEditor} from 'ckeditor5-custom-build/build/ckeditor';
-import { CKEditor } from "@ckeditor/ckeditor5-react";
+import React, { useEffect } from "react";
+
 import BigFooter from "./BigFooter";
 import { BanjosNav } from "./BanjosNav";
+import EditorPage from "./Editor";
+import { Route, Routes } from "react-router-dom";
+import Preview from "./Preview";
 
 const App = () => {
-  const [data, setData] = React.useState(
-    "<p>Banjos</p><img src='https://banjoslivestorage-ordering.s3.ap-southeast-2.amazonaws.com/home-banner/oa0JAlJwN5iYT6JvmpyaufsVL0z38Sjjompg05n8.png' />"
-  );
+  const [data, setData] = React.useState("<h1>Ab</h1><p>Helloo type here</p>");
+  const [isInitial, setIsInitial] = React.useState(true);
+
+  useEffect(() => {
+    setIsInitial(false);
+    const previewData = JSON.parse(localStorage.getItem("previewData"));
+    if (previewData) {
+      setData(previewData);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!isInitial) {
+      localStorage.setItem("preview", JSON.stringify(data));
+    }
+  }, [data]);
 
   return (
     <div>
       <div className="App">
         <BanjosNav />
-        <div>
-          <CKEditor
-            editor={Editor}
-            data={data}
-            onReady={(editor) => {}}
-            onChange={(event, editor) => {
-              const data = editor.getData();
-              console.log({ event, editor, data });
-              setData(data);
-            }}
-            onBlur={(event, editor) => {}}
-            onFocus={(event, editor) => {}}
+        <Routes>
+          <Route
+            path="/"
+            element={<EditorPage data={data} setData={setData} />}
           />
-        </div>
+          <Route path="/Preview" element={<Preview data={data} />} />
+        </Routes>
       </div>
       <BigFooter />
     </div>

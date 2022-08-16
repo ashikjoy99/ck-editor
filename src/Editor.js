@@ -1,0 +1,22 @@
+import React from "react";
+import Editor from "ckeditor5-custom-build/build/ckeditor";
+import { CKEditor } from "@ckeditor/ckeditor5-react";
+
+const EditorPage = ({ data, setData }) => {
+  return (
+    <CKEditor
+      editor={Editor}
+      data={data}
+      onReady={(editor) => {}}
+      onChange={(event, editor) => {
+        const data = editor.getData();
+        console.log({ event, editor, data });
+        setData(data);
+      }}
+      onBlur={(event, editor) => {}}
+      onFocus={(event, editor) => {}}
+    />
+  );
+};
+
+export default EditorPage;
