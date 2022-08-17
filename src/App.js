@@ -13,7 +13,7 @@ const App = () => {
 
   useEffect(() => {
     setIsInitial(false);
-    const previewData = JSON.parse(localStorage.getItem("previewData"));
+    const previewData = JSON.parse(localStorage.getItem("preview"));
     if (previewData) {
       setData(previewData);
     }
