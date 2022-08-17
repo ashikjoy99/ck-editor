@@ -5,18 +5,20 @@ import { CKEditor } from "@ckeditor/ckeditor5-react";
 
 const EditorPage = ({ data, setData }) => {
   return (
-    <CKEditor
-      editor={ClassicEditor}
-      data={data}
-      onReady={(editor) => {}}
-      onChange={(event, editor) => {
-        const data = editor.getData();
-        console.log({ event, editor, data });
-        setData(data);
-      }}
-      onBlur={(event, editor) => {}}
-      onFocus={(event, editor) => {}}
-    />
+    <div className="container-ck-content">
+      <CKEditor
+        editor={ClassicEditor}
+        data={data}
+        onReady={(editor) => {}}
+        onChange={(event, editor) => {
+          const data = editor.getData();
+          console.log({ event, editor, data });
+          setData(data);
+        }}
+        onBlur={(event, editor) => {}}
+        onFocus={(event, editor) => {}}
+      />
+    </div>
   );
 };
 
