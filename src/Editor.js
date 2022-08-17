@@ -1,11 +1,12 @@
 import React from "react";
-import Editor from "ckeditor5-custom-build/build/ckeditor";
+// import Editor from "ckeditor5-custom-build/build/ckeditor";
+import { Editor as ClassicEditor } from "ckeditor5-custom-build/build/ckeditor";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 
 const EditorPage = ({ data, setData }) => {
   return (
     <CKEditor
-      editor={Editor}
+      editor={ClassicEditor}
       data={data}
       onReady={(editor) => {}}
       onChange={(event, editor) => {
