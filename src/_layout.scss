@@ -1,0 +1,95 @@
+body {
+  font-family: $base-font;
+  &.noScroll {
+    overflow: hidden;
+  }
+  @media (max-width: 768px) {
+    padding-bottom: 60px;
+  }
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.container {
+  &.container-max {
+    max-width: 1180px;
+    font-family: $base-font;
+    @media (min-width: 1400px) {
+      max-width: 1300px;
+    }
+    @media (min-width: 1600px) {
+      max-width: 1480px;
+    }
+  }
+}
+.custom_container_swarl {
+  z-index: 1166 !important;
+}
+.swal2-container {
+  z-index: 1160 !important;
+  .swal2-popup {
+    max-width: 326px;
+    @include border-radius(16px);
+    .swal2-actions {
+      margin-top: 0;
+      padding: 0;
+      .swal2-confirm {
+        background: $base-color !important;
+        border-radius: 8px;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-family: $title-font;
+        font-size: 14px;
+        line-height: 18px;
+        color: #ffffff !important;
+      }
+      .swal2-cancel {
+        margin-right: 12px;
+        cursor: pointer;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        border: 1px solid #cccccc;
+        font-family: $title-font;
+        padding: 0 16px;
+        display: flex;
+        align-items: center;
+        color: #808080;
+        height: 36px;
+        background-color: #fff;
+        @include border-radius(8px);
+        @include transition(all 0.3s ease);
+        &:hover {
+          opacity: 0.8;
+          color: #666666f4;
+        }
+      }
+    }
+    .swal2-content,
+    .swal2-header {
+      padding: 0;
+    }
+    .swal2-title {
+      font-family: $base-font;
+      font-weight: 400 !important;
+      font-size: 18px !important;
+      line-height: 24px !important;
+      color: #000000;
+    }
+    .swal2-html-container {
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 18px;
+      color: $gray-40;
+      margin-bottom: 10px;
+    }
+  }
+}

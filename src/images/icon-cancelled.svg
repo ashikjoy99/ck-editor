@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.649" height="20.649" viewBox="0 0 20.649 20.649">
+  <g id="Group_3327" data-name="Group 3327" transform="translate(-19 -372)">
+    <path id="Path_3101" data-name="Path 3101" d="M24.649,14.324A10.324,10.324,0,1,1,14.324,4,10.325,10.325,0,0,1,24.649,14.324Z" transform="translate(15 368)" fill="#e6c8c8"/>
+    <g id="icons8_delete_3" transform="translate(15.627 368.629)">
+      <path id="Path_3105" data-name="Path 3105" d="M0,0H1.629V12.7H0Z" transform="matrix(0.707, 0.707, -0.707, 0.707, 17.425, 8.442)" fill="#f44336"/>
+      <path id="Path_3106" data-name="Path 3106" d="M0,0H1.629V12.7H0Z" transform="matrix(-0.707, 0.707, -0.707, -0.707, 18.576, 17.425)" fill="#f44336"/>
+    </g>
+  </g>
+</svg>

@@ -6,6 +6,7 @@ import { BanjosNav } from "./BanjosNav";
 import EditorPage from "./Editor";
 import { Route, Routes } from "react-router-dom";
 import Preview from "./Preview";
+import { FooterSmall } from "./FooterSmall";
 
 const App = () => {
   const [data, setData] = React.useState(
@@ -38,8 +39,9 @@ const App = () => {
           />
           <Route path="/Preview" element={<Preview data={data} />} />
         </Routes>
+        <BigFooter />
+        <FooterSmall />
       </div>
-      <BigFooter />
     </div>
   );
 };

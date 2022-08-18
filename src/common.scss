@@ -1,2 +1,22 @@
 @import "variables";
-@import "./App.scss";
+@import "./mixins";
+@import "./fonts";
+@import "./layout";
+@import "./footer-big";
+@import "./footer-small";
+@import "./bootstrap/bootstrap";
+@import "./navigation";
+
+.subtitle-13 {
+  font-family: $base-font;
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  line-height: 18px !important;
+}
+
+.subtitle-14 {
+  font-family: $base-font;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+}

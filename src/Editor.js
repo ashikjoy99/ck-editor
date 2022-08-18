@@ -2,10 +2,11 @@ import React from "react";
 // import Editor from "ckeditor5-custom-build/build/ckeditor";
 import { Editor as ClassicEditor } from "ckeditor5-custom-build/build/ckeditor";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
+import { Container } from "reactstrap";
 
 const EditorPage = ({ data, setData }) => {
   return (
-    <div className="container-ck-content">
+    <Container className="container-max">
       <CKEditor
         editor={ClassicEditor}
         data={data}
@@ -18,7 +19,7 @@ const EditorPage = ({ data, setData }) => {
         onBlur={(event, editor) => {}}
         onFocus={(event, editor) => {}}
       />
-    </div>
+    </Container>
   );
 };
 

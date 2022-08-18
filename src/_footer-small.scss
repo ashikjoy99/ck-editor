@@ -1,0 +1,44 @@
+.footer-small {
+  display: flex;
+  padding: 14px 0;
+  justify-content: space-between;
+  .social{
+    a{
+      display: inline-block;
+      width:30px;
+      height: 30px;
+      cursor: pointer;
+      margin-right: 20px;
+      @include transition(all 0.2s linear);
+      &:hover{
+        @include transform(scale(1.1));
+      }
+    }
+    img{
+      max-width: 100%;
+      @include transition(all 0.3s ease);
+    }
+  }
+  .copyright{
+    display: flex;
+    align-items: center;
+    p{
+      font-size: 12px;
+      margin: 0;
+    }
+  }
+   // Responsive
+   @media (max-width: 768px) { 
+     display: block;
+     .social{
+       text-align: center;
+       margin-bottom: 10px;
+     }
+     .copyright{
+       p{
+         text-align: center;
+         font-size: 16px;
+       }
+     }
+   }
+}

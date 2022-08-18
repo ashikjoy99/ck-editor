@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Calibri-bold";
+  src: url("./fonts/Calibri-Bold.woff2") format("woff2"),
+    url("./fonts/Calibri-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: url("./fonts/Calibri.woff2") format("woff2"),
+    url("./fonts/Calibri.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Grenette Pro";
+  src: url("./fonts/GrenettePro-Regular.woff2") format("woff2"),
+    url("./fonts/GrenettePro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
