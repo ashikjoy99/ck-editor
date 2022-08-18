@@ -12,7 +12,7 @@ export function BanjosNav() {
             <NavbarBrand href="/">
               <img src={Logo} alt="LOGO" />
             </NavbarBrand>
-            <div className="ps-4">Contact us</div>
+            <h6 className="ps-4">Our Coffee</h6>
           </div>
         </div>
         <div className="nav-options">

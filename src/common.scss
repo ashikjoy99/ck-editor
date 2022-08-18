@@ -20,3 +20,30 @@
   font-size: 14px !important;
   line-height: 18px !important;
 }
+
+.breadcrumbWrap {
+  .breadcrumb {
+    background: transparent;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-90;
+    margin: 0;
+    .container-max {
+      height: 14px;
+    }
+    .breadcrumb-item {
+      color: #808080;
+      font-size: 12px;
+      line-height: 15.84px;
+      a {
+        color: #747d42;
+        text-decoration: underline;
+      }
+    }
+    a.breadcrumb-item {
+      color: $base-color;
+    }
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
