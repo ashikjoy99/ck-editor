@@ -5,7 +5,7 @@ import { Container } from "reactstrap";
 const Preview = ({ data }) => {
   return (
     <Container className="container-max">
-      <div className="ck-content">{parse(data)}</div>
+      <div className="ck-content mt-3">{parse(data)}</div>
     </Container>
   );
 };
