@@ -29,6 +29,10 @@ const App = () => {
     }
   }, [data]);
 
+  const resetLocalSTorage = () => {
+    localStorage.removeItem("preview");
+  };
+
   return (
     <div>
       <div className="App">
@@ -49,7 +53,7 @@ const App = () => {
           <Route path="/Preview" element={<Preview data={data} />} />
         </Routes>
         <BigFooter />
-        <FooterSmall />
+        <FooterSmall resetLocalSTorage={resetLocalSTorage} />
       </div>
     </div>
   );

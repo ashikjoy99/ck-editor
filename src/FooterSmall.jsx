@@ -4,7 +4,7 @@ import FacebookLogo from "./facebook.svg";
 import InstagramLogo from "./instagram.svg";
 import TwitterLogo from "./twitter.svg";
 
-export function FooterSmall() {
+export function FooterSmall({ resetLocalSTorage }) {
   return (
     <footer className="footerBg">
       <Container className="container-max">
@@ -21,7 +21,7 @@ export function FooterSmall() {
             </a>
           </div>
           <div className="copyright">
-            <p>
+            <p onClick={() => resetLocalSTorage()}>
               All Rights Reserved. Copyright © Banjo’s Pty Ltd. Version: 1.9.0
             </p>
           </div>
