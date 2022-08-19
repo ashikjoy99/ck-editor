@@ -42,7 +42,7 @@ const App = () => {
             <BreadcrumbItem role="button" tag="a">
               Home
             </BreadcrumbItem>
-            <BreadcrumbItem active={true}>Our Coffee </BreadcrumbItem>
+            <BreadcrumbItem active={true}>Our Food </BreadcrumbItem>
           </Container>
         </Breadcrumb>
         <Routes>
