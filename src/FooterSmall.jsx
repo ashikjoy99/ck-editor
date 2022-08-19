@@ -21,7 +21,7 @@ export function FooterSmall({ resetLocalSTorage }) {
             </a>
           </div>
           <div className="copyright">
-            <p onClick={() => resetLocalSTorage()}>
+            <p>
               All Rights Reserved. Copyright © Banjo’s Pty Ltd. Version: 1.9.0
             </p>
           </div>
