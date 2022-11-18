@@ -14,18 +14,16 @@ class EditorPage extends Component {
     };
 
     return (
-      <Container className="container-max">
-        <CKEditor
-          required
-          editor={ClassicEditor}
-          config={custom_config}
-          data={data}
-          onChange={(event, editor) => {
-            const data = editor.getData();
-            setData(data);
-          }}
-        />
-      </Container>
+      <CKEditor
+        required
+        editor={ClassicEditor}
+        config={custom_config}
+        data={data}
+        onChange={(event, editor) => {
+          const data = editor.getData();
+          setData(data);
+        }}
+      />
     );
   }
 }
